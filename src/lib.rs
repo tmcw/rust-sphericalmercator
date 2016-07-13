@@ -11,7 +11,7 @@ pub struct Coordinate {
     pub y: f64,
 }
 
-fn forward(c: Coordinate) -> Coordinate {
+pub fn forward(c: Coordinate) -> Coordinate {
     Coordinate {
         x: (A * c.x * D2R)
             .max(-MAXEXTENT)
@@ -22,7 +22,7 @@ fn forward(c: Coordinate) -> Coordinate {
     }
 }
 
-fn inverse(c: Coordinate) -> Coordinate {
+pub fn inverse(c: Coordinate) -> Coordinate {
     Coordinate { 
         x: (c.x * R2D / A) as f64,
         y: ((f64::consts::PI * 0.5) - 2.0 * ((-c.y / A).exp()).atan()) * R2D

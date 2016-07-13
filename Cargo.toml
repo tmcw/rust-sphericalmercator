@@ -2,5 +2,8 @@
 name = "sphericalmercator"
 version = "0.1.0"
 authors = ["Tom MacWright <tom@macwright.org>"]
+keywords = ["projection", "mercator", "geo"]
+description = "Functions to project and unproject the Spherical Mercator project to and from WGS84 longitude and latitude"
+license = "ISC"
 
 [dependencies]
